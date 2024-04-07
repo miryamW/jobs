@@ -1,0 +1,13 @@
+
+<div>
+  <p><strong>name:</strong> {{jobData!.name}}</p>
+  <p><strong>domain:</strong> {{jobData!.domain|showDomain}}</p>
+  <p><strong>scope of position:</strong> {{jobData?.hoursScope}}</p>
+  <p><strong>area:</strong> {{jobData?.area}}</p>
+  <p *ngIf="bylink"><strong>requirements: </strong> {{jobData?.requirements}}</p>
+  <p *ngIf="bylink"> {{jobData?.hybrid?'hybrid':'not hybrid'}}</p>
+  <a [routerLink]="''+this.jobData?.id"><button class="btn btn-outline-secondary" *ngIf="!bylink">show details</button></a>
+  <button *ngIf="!bylink"class="btn btn-outline-secondary" (click)="sendCV()"><a>send CV</a></button>
+  <a [routerLink]="'/jobs'"><button class="btn btn-outline-secondary" *ngIf="bylink">back</button></a>
+
+</div>

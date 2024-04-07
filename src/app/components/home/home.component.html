@@ -1,0 +1,12 @@
+<header  class="navbar bg-body-tertiary" [ngClass]="'menu'">
+  <a [routerLink]="'/login'"><img src="../../../assets/logo.png" width="40%"></a>
+  <a [ngClass]="'li'" class="navbar-brand">{{user.userName}}</a>
+  <a [ngClass]="'li'" [routerLink]="'/jobs'" [queryParams]="{domain:user.domain}">{{user.domain|showDomain}}</a>
+  <a [ngClass]="'li'"class="navbar-brand">Number of CVs sent: {{userSvc.numOfSends}}</a>
+</header>
+<br>
+<router-outlet ></router-outlet>
+<br>
+<footer [ngClass]="'menu'" >contact us:<span>m0504164572gmail.com</span>
+  <span>0504164572</span>
+</footer>

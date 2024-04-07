@@ -1,0 +1,11 @@
+<form ngform >
+  <input type="text" name = "domain" (blur)="applyFilter()" [(ngModel)]="filter.domain" placeholder="choose domain" >
+  <input type="text" name = "area" (blur)="applyFilter()" [(ngModel)]="filter.area" placeholder="choose area" >
+</form>
+<div *ngFor="let job of jobs">
+  <app-job [jobData] = job (listAdd)="sendCV($event)"></app-job>
+</div>
+<p *ngIf="myJobs.length>0">Jobs that you sent a CV to:</p>
+<div *ngFor="let job of myJobs">
+  <li>{{job.name}} ({{job.count}})</li>
+</div>

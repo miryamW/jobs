@@ -1,0 +1,7 @@
+<form   [formGroup]="form!">
+
+      <input formControlName="userName" type="text" name ="userName"  [(ngModel)]="userData.userName" placeholder="username" required><br><br>
+      <input formControlName="password" type="password" (blur)="passwordError()" name ="password" [(ngModel)]="userData.password" placeholder="password" required><br><br>
+
+  <button class="btn btn-outline-secondary" type="submit"  (click)="loginClick()">Login</button>
+</form>
