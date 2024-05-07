@@ -1,0 +1,22 @@
+[
+
+  {
+    "Id": 1,
+    "UserName": "john_doe",
+    "Password": "password12345",
+    "Domain": 0
+  },
+  {
+    "Id": 2,
+    "UserName": "jane_smith",
+    "Password": "secure12345",
+    "Domain": 4
+  },
+  {
+    "Id": 3,
+    "UserName": "alex_wong",
+    "Password": "pass12345",
+    "Domain": 2
+  }
+]
+

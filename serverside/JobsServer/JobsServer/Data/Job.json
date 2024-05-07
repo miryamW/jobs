@@ -1,0 +1,39 @@
+[
+
+  {
+    "Id": 1,
+    "Domain": 0,
+    "Name": "Software Developer",
+    "HoursScope": 40,
+    "Area": "Technology",
+    "Requirements": "Bachelor's degree in Computer Science",
+    "Hybrid": true
+  },
+  {
+    "Id": 2,
+    "Domain": 1,
+    "Name": "Accountant",
+    "HoursScope": 35,
+    "Area": "Finance",
+    "Requirements": "CPA certification",
+    "Hybrid": false
+  },
+  {
+    "Id": 3,
+    "Domain": 4,
+    "Name": "Math Teacher",
+    "HoursScope": 30,
+    "Area": "Education",
+    "Requirements": "Teaching certification",
+    "Hybrid": true
+  },
+  {
+    "Id": 4,
+    "Domain": 2,
+    "Name": " bh",
+    "HoursScope": 30,
+    "Area": "njm",
+    "Requirements": "g fff",
+    "Hybrid": true
+  }
+]
